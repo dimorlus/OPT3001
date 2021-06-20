@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="LightMtr.exe"/>
+    <OBJFILES value="LightMtr.obj LightMtrFrm.obj ..\HID_lib\USB_HID_CLASS.obj BLDR.obj 
+      ccrc.obj Hex.obj"/>
+    <RESFILES value="LightMtr.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) LightMtrFrm.dfm BLDR.dfm"/>
+    <LIBFILES value="..\HID_lib\hid.lib"/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi"/>
+    <PATHCPP value=".;..\HID_lib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="LightMtr.cpp"/>
+    <INCLUDEPATH value="..\HID_lib;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;&quot;D:\Projects\LED\OPT3001\PC\Light meter&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\HID_lib;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;&quot;D:\Projects\LED\OPT3001\PC\Light meter&quot;;D:\PCProjects\Bpl;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\HID_lib -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
+      -I&quot;D:\Projects\LED\OPT3001\PC\Light meter&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -ff -X- -r- -a1 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="LightMtr.res" FORMNAME="" UNITNAME="LightMtr.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LightMtr.cpp" FORMNAME="" UNITNAME="LightMtr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LightMtrFrm.cpp" FORMNAME="OPT" UNITNAME="LightMtrFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\HID_lib\USB_HID_CLASS.cpp" FORMNAME="" UNITNAME="USB_HID_CLASS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\HID_lib\hid.lib" FORMNAME="" UNITNAME="hid.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BLDR.cpp" FORMNAME="Bootloader" UNITNAME="BLDR" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ccrc.cpp" FORMNAME="" UNITNAME="ccrc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Hex.cpp" FORMNAME="" UNITNAME="Hex" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=1
+Build=1
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1200
+
+[Version Info Keys]
+CompanyName=Greentek LTD
+FileDescription=Light meter control software
+FileVersion=1.01.01
+InternalName=HID OPT3001
+LegalCopyright=Dmitry Orlov, 2015
+LegalTrademarks=BrightHID
+OriginalFilename=LightMtr.exe
+ProductName=Dongle32
+ProductVersion=1.01.01
+Comments=Light meter control software
+Date=01-12-15. 11:34:41
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=..\HID_lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Projects\LED\OPT3001\PC\Light meter;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\HID_lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Projects\LED\OPT3001\PC\Light meter;$(BCB)\include;$(BCB)\include\vcl;D:\Projects\LED\OPT3001\PC\HID_lib
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=..\HID_lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Projects\LED\OPT3001\PC\Light meter;D:\PCProjects\Bpl;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
