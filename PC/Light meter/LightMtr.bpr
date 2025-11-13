@@ -31,9 +31,10 @@
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I..\HID_lib -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
+    <IDLCFLAGS value="-src_suffix cpp -D_DEBUG -I..\HID_lib 
+      -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
       -I&quot;D:\Projects\LED\OPT3001\PC\Light meter&quot; -I$(BCB)\include 
-      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+      -I$(BCB)\include\vcl -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -ff -X- -r- -a1 -b- -k -y -v -vi- 
       -c -tW -tWM"/>
     <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>

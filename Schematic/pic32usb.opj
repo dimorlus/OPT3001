@@ -22,14 +22,4 @@
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -4 -29 0 200 0 602"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -4 -29 54 1677 56 691")
-        (Scroll "0 307")
-        (Zoom "282")
-        (Occurrence "/"))
-      (Path "D:\PROJECTS\LED\OPT3001\SCHEMATIC\PIC32USB.DSN")
-      (Schematic "PIC32USB")
-      (Page "PIC32USB"))))
+      (Tab 0))))

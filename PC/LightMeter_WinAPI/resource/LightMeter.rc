@@ -1,0 +1,4 @@
+#include <windows.h>
+
+// Application icon
+101 ICON "..\\lamp.ico"
