@@ -8,6 +8,7 @@
 #ifndef MAIN_C
 #define MAIN_C
 
+#define _DISABLE_OPENADC10_CONFIGPORT_WARNING
 /** INCLUDES *******************************************************/
 #include <xc.h>
 #include <plib.h>
@@ -406,7 +407,8 @@ static void InitializeSystem(void)
 void UserInit(void)
 {
     DDPCONbits.JTAGEN = 0;
-    DDPCONbits.TROEN = 0;
+    //DDPCONbits.TROEN = 0;
+    DDPCONbits.TDOEN = 0;
 
     ANSELA = BIT_0+BIT_1; // RA0, RA1
     TRISA = BIT_0+BIT_1;  // RA0, RA1

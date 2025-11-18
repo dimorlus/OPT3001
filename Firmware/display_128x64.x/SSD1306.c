@@ -18,6 +18,7 @@ All text above, and the splash screen below must be included in any redistributi
 #include <plib.h>
 #include <xc.h>
 #include "types.h"
+#include <string.h>
 #include "SSD1306.h"
 
 

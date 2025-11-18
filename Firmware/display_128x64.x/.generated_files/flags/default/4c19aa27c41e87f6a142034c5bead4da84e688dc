@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE)  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -Os -I"." -I".." -I"Microchip/Include" -I"Microchip/Include/USB" -I"Microchip/USB"   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -D_SUPPRESS_PLIB_WARNING   D:\Projects\LED\Display SSD1306\display_128x64.x\main.c
